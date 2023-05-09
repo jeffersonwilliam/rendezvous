@@ -1,5 +1,6 @@
 import Header from './Header';
 import Hero from './hero/Hero';
+import Conditions from './conditions/Conditions';
 import './home.scss';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <Header />
       <Hero />
+      <Conditions />
     </div>
   );
 };

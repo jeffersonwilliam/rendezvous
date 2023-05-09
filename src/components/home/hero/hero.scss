@@ -8,15 +8,15 @@
   inset: 0;
   z-index: -1;
   filter: brightness(50%);
-  background: pink;
+  // background: pink;
   background-image: url('../../../assets/restaurantfront.jpg');
   background-size: cover;
   background-position: center;
   margin: 18px 50px 0px 50px;
+  border-radius: 5px;
 }
 
 .hero-img-wrapper p {
-  // color: white;
   color: white;
   font-size: 3rem;
   font-weight: 800;
@@ -29,6 +29,12 @@
   font-weight: 800;
 }
 
+.hero-star-icons:hover {
+  cursor: pointer;
+  color: #e1c896;
+  fill: #e1c896;
+}
+
 .star-ratings {
   padding: 100px;
 }
@@ -38,7 +44,6 @@
   place-content: center;
   justify-content: space-between;
   text-align: center;
-  // min-height: 250px;
   height: 120px;
 }
 
@@ -52,13 +57,13 @@
 }
 
 #info-btn-container {
-  // padding: 100px;
   padding-top: 0px;
   padding-left: 100px;
   padding-bottom: 100px;
 }
 
 .button {
+  display: flex;
   background-color: #e1c896;
   border: none;
   color: black;
@@ -74,4 +79,8 @@
 
 .button:hover {
   background-color: #f1f1f1;
+}
+
+.b-arrow {
+  margin-bottom: -4px;
 }

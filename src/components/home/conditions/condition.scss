@@ -1,0 +1,29 @@
+#conditions-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 50px 0px 50px;
+}
+
+#weather-widget {
+  display: flex;
+  width: 45%;
+  height: 250px;
+  background-color: #f8eafd;
+  border-radius: 5px;
+}
+
+#weather-widget-content {
+  margin: auto;
+}
+
+#time-widget {
+  display: flex;
+  width: 45%;
+  height: 250px;
+  background-color: #f8eafd;
+  border-radius: 5px;
+}
+
+#time-widget-content {
+  margin: auto;
+}
