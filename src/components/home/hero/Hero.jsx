@@ -3,14 +3,7 @@ import restaurantfront from '../../../assets/restaurantfront.jpg';
 import Button from '@mui/material/Button';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Icon from '@mui/material/Icon';
-import MdPhone from '@mui/icons-material/Phone';
-import Chip from '@mui/material/Chip';
-// import { faInfo } from '@fortawesome/free-solid-svg-icons/faInfo';
-import { green } from '@mui/material/colors';
-import { faCamera } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { BiRightArrowAlt } from 'react-icons/bi';
 import './hero.scss';
 
 const theme = createTheme({
@@ -72,14 +65,20 @@ const Hero = () => {
           <Chip icon={<MdPhone />} label='Call me' />
           <Chip icon={<Icon className='fas fa-phone-alt' />} label='Call me' />
         </ThemeProvider> */}
+        <div id='info-btn-container'>
+          <button className='button'>
+            More info <BiRightArrowAlt />
+          </button>
+        </div>
       </div>
-      <Button
+
+      {/* <Button
         variant='contained'
         sx={{ backgroundColor: '#E1C896', borderRadius: '10px' }}
         startIcon={<FontAwesomeIcon icon={faCamera} />}
       >
         Example
-      </Button>
+      </Button> */}
     </div>
   );
 };
