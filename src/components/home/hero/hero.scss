@@ -7,82 +7,45 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  // opacity: 0.4;
   filter: brightness(50%);
-
   background: pink;
   background-image: url('../../../assets/restaurantfront.jpg');
   background-size: cover;
   background-position: center;
   margin: 18px 50px 0px 50px;
-  // content: '';
-  // width: 94%;
-  // height: 300px;
-  // position: absolute;
-  // object-fit: cover;
-  // background-image: url('../../../assets/restaurantfront.jpg');
-  // background-size: cover; /* or "contain" depending on what you want */
-  // background-position: center center;
-  // background-repeat: no-repeat;
-  // text-align: center;
-  // padding: 0;
-  // filter: brightness(0.4);
 }
-
-// .hero-img-wrapper img {
-//   width: 94%;
-//   height: 360px;
-//   object-fit: cover;
-//   margin: 18px 50px 0px 50px;
-//   filter: brightness(0.4);
-// }
 
 .hero-img-wrapper p {
   // color: white;
   color: white;
   font-size: 3rem;
   font-weight: 800;
-  margin: 100px;
-  // position: relative;
-  // top: 115px;
-  // left: 96px;
+  padding: 100px;
 }
 
 .hero-star-icons {
-  // position: relative;
-  // top: 115px;
-  // right: 96px;
   color: white;
   font-size: 3rem;
   font-weight: 800;
-  // margin: 100px;
 }
 
 .star-ratings {
-  margin: 100px;
+  padding: 100px;
 }
 
-// .hero-overlay {
-//   display: flex;
-//   // position: absolute;
-//   // top: 115px;
-//   // left: 96px;
-//   width: 88%;
-//   justify-content: space-between;
-// }
-
 .two-texts {
-  // width: 50px;
-  // display: flex;
-
-  // position: relative;
-  // top: 115px;
-  // left: 96px;
-  // width: 80%;
-
   display: flex;
   place-content: center;
   justify-content: space-between;
   text-align: center;
-  min-height: 500px;
+  // min-height: 250px;
+  height: 120px;
+}
+
+.hero-description {
+  display: flex;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 100px;
 }
