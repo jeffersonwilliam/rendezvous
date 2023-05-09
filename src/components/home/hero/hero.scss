@@ -48,4 +48,30 @@
   font-size: 1.8rem;
   font-weight: 400;
   padding: 100px;
+  padding-bottom: 40px;
+}
+
+#info-btn-container {
+  // padding: 100px;
+  padding-top: 0px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+}
+
+.button {
+  background-color: #e1c896;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
 }
