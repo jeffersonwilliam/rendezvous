@@ -1,0 +1,112 @@
+#venuedetails-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 18px 50px 50px 50px;
+  background-color: aqua;
+  height: 310px;
+  padding: 12px;
+}
+
+#v-c-location {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#v-c-location p {
+  font-size: 16px;
+  width: 280px;
+}
+
+#v-c-map {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#v-c-map p {
+  font-size: 16px;
+  width: 280px;
+}
+
+#v-c-map-distance {
+  display: flex;
+  flex-direction: column;
+}
+
+#v-c-time {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#v-c-time p {
+  font-size: 16px;
+  width: 280px;
+}
+
+#v-c-parking {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#v-c-parking p {
+  font-size: 16px;
+  width: 280px;
+}
+
+.venue-icons {
+  padding: 15px;
+}
+
+#action-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #ced3d6 radial-gradient(circle, transparent 1%, #ced3d6 1%)
+    center/15000%;
+}
+.ripple:active {
+  background-color: #a7adb1;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.cancel-button {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+  background-color: #fff;
+  // border-color: #04AA6D;
+  // box-shadow: 0 0 4px #999;
+  // outline: none;
+}
+
+.edit-button {
+  border: none;
+  border-radius: 2px;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #2196f3;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}

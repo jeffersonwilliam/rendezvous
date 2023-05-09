@@ -5,7 +5,7 @@ import './hero.scss';
 
 const Hero = () => {
   return (
-    <div>
+    <div className='hero-container'>
       <div className='hero-img-wrapper'>
         <div className='two-texts'>
           <p>Cafe Noir</p>
