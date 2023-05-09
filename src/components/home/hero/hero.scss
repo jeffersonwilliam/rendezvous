@@ -1,5 +1,21 @@
+.hero-container {
+  overflow: hidden;
+}
+
 .hero-img-wrapper {
   position: relative;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+// from: https://stackoverflow.com/questions/52695453/make-images-expand-on-hover-from-center-and-make-image-still-stay-in-box
+.hero-img-wrapper:hover {
+  transform: scale(1.005, 1.005);
+  // transform: scale(
+  //   1.005,
+  //   1.005
+  // ); //in future we just want the image to zoom in and not container too
 }
 
 .hero-img-wrapper::after {

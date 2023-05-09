@@ -13,7 +13,11 @@
 }
 
 #weather-widget-content {
+  display: flex;
+  flex-direction: column;
   margin: auto;
+  align-items: center;
+  line-height: 50px;
 }
 
 #time-widget {
@@ -25,5 +29,14 @@
 }
 
 #time-widget-content {
+  display: flex;
+  flex-direction: column;
   margin: auto;
+  align-items: center;
+  line-height: 30px;
+  margin-top: 91px;
+}
+
+.widget-alert-info {
+  font-weight: bolder;
 }
