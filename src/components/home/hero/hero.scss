@@ -80,7 +80,7 @@
 
 .button {
   display: flex;
-  background-color: #e1c896;
+  background-color: var(--gold);
   border: none;
   color: black;
   padding: 10px 20px;
@@ -94,7 +94,7 @@
 }
 
 .button:hover {
-  background-color: #f1f1f1;
+  background-color: var(--white);
 }
 
 .b-arrow {
