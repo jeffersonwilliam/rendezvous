@@ -29,9 +29,9 @@ const VenueDetails = () => {
       </div>
 
       <div id='action-btns'>
-        <button class='cancel-button ripple'>Cancel</button>
+        <button className='cancel-button ripple'>Cancel</button>
 
-        <button class='edit-button ripple'>Edit</button>
+        <button className='edit-button ripple'>Edit</button>
       </div>
     </div>
   );

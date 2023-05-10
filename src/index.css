@@ -12,6 +12,22 @@ body {
 }
 
 :root {
-  --blue: #1e90ff;
+  --gold: #e1c896;
   --white: #ffffff;
+  --black: #000000;
+
+
+  /** More Variables **/
+  --color-bg: #1f2833;
+  --color-bg-variant: #1e3e7a;
+  --color-primary: #66FCF1;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #c5c6c7;
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 }
