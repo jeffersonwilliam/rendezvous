@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MdOutlineLocationOn } from 'react-icons/md';
 import { CiMap, CiClock1, CiParking1, CiLocationOn } from 'react-icons/ci';
 import TransitionsModal from '../../../utils/modal/ogmodal';
@@ -36,6 +36,7 @@ const modalButtons = {
 const VenueDetails = () => {
   const dispatch = useDispatch();
 
+  const [dateStatus, setDateStatus] = useState(false);
   const [open, setOpen] = React.useState(false);
   // const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -45,7 +46,29 @@ const VenueDetails = () => {
     displayModal();
   };
 
-  const displayModal = () => {
+  const cancelDate = () => {
+    setDateStatus(true);
+  };
+
+  const finalCancelation = () => {
+    setDateStatus(false);
+    setOpen(false);
+  };
+
+  const cancelModalContent = {
+    confirmationText: 'Are you sure you want to cancel?',
+    yesBtn: 'Yes',
+    noBtn: 'No',
+    display: 'firstmodal',
+  };
+
+  const confirmationModalContent = {
+    confirmationText: 'Your date with John was cancelled',
+    noBtn: 'Back to Recommendations',
+    display: 'secondmodal',
+  };
+
+  const displayModal = (options) => {
     return (
       <div>
         <Modal
@@ -69,35 +92,38 @@ const VenueDetails = () => {
                 component='h1'
                 align='center'
               >
-                Are you sure you want to cancel?
+                {options?.confirmationText}
               </Typography>
-              {/* <Typography id='transition-modal-description' sx={{ mt: 2 }}>
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-              </Typography> */}
 
-              <div style={modalButtons}>
-                <button
-                  className='cancel-button ripple'
-                  onClick={showCancelModal}
-                >
-                  Yes
-                </button>
+              {options?.display === 'firstmodal' && (
+                <div style={modalButtons}>
+                  <button className='cancel-button ripple' onClick={cancelDate}>
+                    {options?.yesBtn}
+                  </button>
 
-                <button className='edit-button ripple' onClick={handleClose}>
-                  No
-                </button>
-              </div>
+                  <button className='edit-button ripple' onClick={handleClose}>
+                    {options?.noBtn}
+                  </button>
+                </div>
+              )}
 
-              {/* <Typography>
-                <button
-                  className='cancel-button ripple'
-                  onClick={showCancelModal}
-                >
-                  Cancel
-                </button>
+              {options?.display === 'secondmodal' && (
+                <div style={modalButtons}>
+                  {/* <button
+                    className='cancel-button ripple'
+                    onClick={showCancelModal}
+                  >
+                    {options?.yesBtn}
+                  </button> */}
 
-                <button className='edit-button ripple'>Edit</button>
-              </Typography> */}
+                  <button
+                    className='edit-button ripple sec-md-btn'
+                    onClick={finalCancelation}
+                  >
+                    {options?.noBtn}
+                  </button>
+                </div>
+              )}
             </Box>
           </Fade>
         </Modal>
@@ -135,7 +161,8 @@ const VenueDetails = () => {
         <button className='edit-button ripple'>Edit</button>
       </div>
 
-      {open && displayModal()}
+      {open && displayModal(cancelModalContent)}
+      {dateStatus && displayModal(confirmationModalContent)}
     </div>
   );
 };
