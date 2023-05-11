@@ -1,7 +1,7 @@
 nav {
   // background: rgba(0, 0, 0, 0.3);
   // background: rgba(160, 69, 50, 0.3);
-  background: var(--gold);
+  background: var(--nav-bg);
   width: max-content;
   display: block;
   padding: 0.7rem 1.7rem;
@@ -21,7 +21,7 @@ nav a {
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-light);
+  color: var(--black);
   font-size: 1.1rem;
 }
 
@@ -30,8 +30,9 @@ nav a:hover {
 }
 
 nav a.active {
-  background: var(--color-primary);
+  background: var(--gold);
   color: var(--color-bg);
+  // color: var(--purple);
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */

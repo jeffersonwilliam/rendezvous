@@ -34,7 +34,7 @@ const Nav = () => {
         onClick={() => setActiveNav('#add-date')}
         className={activeNav === '#add-date' ? 'active' : ''}
       >
-        <BsPlusCircleFill />
+        <BsPlusCircleFill color={'#D353FF'} />
       </a>
       <a
         href='#sos'
