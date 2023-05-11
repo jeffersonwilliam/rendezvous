@@ -43,8 +43,8 @@ const Hero = () => {
           assortment of eclairs, pastries, and sandwiches
         </div>
         <div id='info-btn-container'>
-          <button className='button'>
-            <>More info</>
+          <button className='more-info-button ripple' onClick={''}>
+            More info
             <BiRightArrowAlt className='b-arrow' size={20} />
           </button>
         </div>
