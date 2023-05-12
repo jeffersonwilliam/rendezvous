@@ -1,5 +1,6 @@
 import Home from './components/home/Home';
 import Nav from './components/nav/Nav';
+import MoreInfo from './components/more-info/MoreInfo';
 import {
   BrowserRouter,
   Route,
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/test' element={<Home />} />
+          <Route path='/more-info' element={<MoreInfo />} />
           {/* <Home /> */}
         </Routes>
       </BrowserRouter>
