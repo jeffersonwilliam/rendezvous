@@ -1,21 +1,40 @@
 import React from 'react';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import { BiRightArrowAlt } from 'react-icons/bi';
+import { MdArrowBack } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './hero.scss';
 
 const Hero = ({ cafeDetails }) => {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/');
+  }
   return (
     <div className='hero-container'>
       <div className='hero-img-wrapper'>
         {cafeDetails.showBackBtn === true ? (
-          <p className='hero-back-btn'>Back Button</p>
+          <MdArrowBack className='hero-back-btn' onClick={handleClick} />
         ) : (
           <></>
         )}
 
         <div className='two-texts'>
-          <p>{cafeDetails?.title}</p>
+          {cafeDetails?.showAllStars === true ? (
+            <div className='title-and-ratings'>
+              <p className='hero-title'>{cafeDetails?.title}</p>
+            </div>
+          ) : (
+            <div className='title-and-ratings'>
+              <div className='hero-title'>
+                <p>{cafeDetails?.title}</p>
+                <p id='rating-val'>{cafeDetails?.rating}</p>
+              </div>
+            </div>
+          )}
+
           <div className='star-ratings'>
             {cafeDetails?.showAllStars === true ? (
               <>
@@ -57,10 +76,7 @@ const Hero = ({ cafeDetails }) => {
           </div>
         </div>
 
-        <div className='hero-description'>
-          A casual Parisian-inspired cafe with a lively atmosphere and a wide
-          assortment of eclairs, pastries, and sandwiches
-        </div>
+        <div className='hero-description'>{cafeDetails?.desc}</div>
         {cafeDetails?.showMoreInfoBtn === true ? (
           <div id='info-btn-container'>
             <Link to='/more-info'>
