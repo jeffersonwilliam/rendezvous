@@ -15,15 +15,15 @@ body {
   --gold: #e1c896;
   --white: #ffffff;
   --black: #000000;
-  --purple: #D353FF;
+  --purple: #d353ff;
   --nav-bg: #efefef;
-
-
+  --rendezvous-purple: #fff5ff;
+  --purple-outline: #c18bbf;
 
   /** More Variables **/
   --color-bg: #1f2833;
   --color-bg-variant: #1e3e7a;
-  --color-primary: #66FCF1;
+  --color-primary: #66fcf1;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #c5c6c7;
   --color-light: rgba(255, 255, 255, 0.6);
