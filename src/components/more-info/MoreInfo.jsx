@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../../utils/hero/Hero';
+import ImageCarousel from '../filter-views/details/image-carousel/ImageCarousel';
 import FilterButtons from '../filter-buttons/FilterButtons';
 
 const MoreInfo = () => {
@@ -16,6 +17,7 @@ const MoreInfo = () => {
     <div>
       <Hero cafeDetails={cafeDetails} />
       <FilterButtons />
+      <ImageCarousel />
     </div>
   );
 };
