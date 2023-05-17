@@ -1,12 +1,22 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { setView } from '../../actions';
 import './filterbuttons.scss';
 
 const FilterButtons = () => {
+  const dispatch = useDispatch();
+
   const [activeButton, setActiveButton] = useState('');
+
+  const handleView = (view) => {
+    setActiveButton(view);
+    dispatch(setView(view));
+  };
+
   return (
     <div className='moreinfo-filter-btns'>
       <button
-        onClick={() => setActiveButton('details')}
+        onClick={() => handleView('details')}
         className={
           activeButton === 'details'
             ? 'active-f-b ripple'
@@ -16,7 +26,7 @@ const FilterButtons = () => {
         Details
       </button>
       <button
-        onClick={() => setActiveButton('menu')}
+        onClick={() => handleView('menu')}
         className={
           activeButton === 'menu'
             ? 'active-f-b ripple'
@@ -26,7 +36,7 @@ const FilterButtons = () => {
         Menu
       </button>
       <button
-        onClick={() => setActiveButton('vibes')}
+        onClick={() => handleView('vibes')}
         className={
           activeButton === 'vibes'
             ? 'active-f-b ripple'
@@ -36,7 +46,7 @@ const FilterButtons = () => {
         Vibes
       </button>
       <button
-        onClick={() => setActiveButton('reviews')}
+        onClick={() => handleView('reviews')}
         className={
           activeButton === 'reviews'
             ? 'active-f-b ripple'

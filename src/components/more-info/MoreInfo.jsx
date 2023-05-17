@@ -2,6 +2,9 @@ import React from 'react';
 import Hero from '../../utils/hero/Hero';
 import ImageCarousel from '../filter-views/details/image-carousel/ImageCarousel';
 import FilterButtons from '../filter-buttons/FilterButtons';
+import VenueDetails from '../../utils/venuedetails/VenueDetails';
+import { useSelector } from 'react-redux';
+import { current } from '@reduxjs/toolkit';
 
 const MoreInfo = () => {
   const cafeDetails = {
@@ -13,11 +16,37 @@ const MoreInfo = () => {
     showBackBtn: true,
   };
 
+  const currentView = useSelector((state) => state.view.currentView);
+
+  const handleRender = () => {
+    if (currentView === 'details') {
+      return (
+        <>
+          <ImageCarousel />
+          <VenueDetails />
+        </>
+      );
+    } else if (currentView === 'menu') {
+      return <>Menu</>;
+    } else if (currentView === 'vibes') {
+      return <>Vibes</>;
+    } else if (currentView === 'reviews') {
+      return <>Reviews</>;
+    } else {
+      return (
+        <>
+          <ImageCarousel />
+          <VenueDetails />
+        </>
+      );
+    }
+  };
+
   return (
     <div>
       <Hero cafeDetails={cafeDetails} />
       <FilterButtons />
-      <ImageCarousel />
+      {handleRender()}
     </div>
   );
 };
