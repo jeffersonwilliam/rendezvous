@@ -3,6 +3,7 @@ import Hero from '../../utils/hero/Hero';
 import ImageCarousel from '../filter-views/details/image-carousel/ImageCarousel';
 import FilterButtons from '../filter-buttons/FilterButtons';
 import VenueDetails from '../../utils/venuedetails/VenueDetails';
+import Menu from '../filter-views/menu/Menu';
 import { useSelector } from 'react-redux';
 import { current } from '@reduxjs/toolkit';
 
@@ -27,7 +28,11 @@ const MoreInfo = () => {
         </>
       );
     } else if (currentView === 'menu') {
-      return <>Menu</>;
+      return (
+        <>
+          <Menu />
+        </>
+      );
     } else if (currentView === 'vibes') {
       return <>Vibes</>;
     } else if (currentView === 'reviews') {

@@ -3,11 +3,6 @@ import { ActionTypes } from '../actions';
 
 enableAllPlugins();
 
-// const initialState = {
-//   all: [],
-//   current: {},
-// };
-
 const initialState = { currentView: 'details' };
 
 const ViewReducer = produce((draftState, action = {}) => {
