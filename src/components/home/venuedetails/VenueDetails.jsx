@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
-import { MdOutlineLocationOn } from 'react-icons/md';
 import { CiMap, CiClock1, CiParking1, CiLocationOn } from 'react-icons/ci';
-import TransitionsModal from '../../../utils/modal/ogmodal';
 import { useDispatch } from 'react-redux';
-import { setBoolean } from '../../../actions';
-import { useSelector } from 'react-redux';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
