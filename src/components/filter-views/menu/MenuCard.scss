@@ -1,0 +1,22 @@
+.m-c-style {
+  display: flex;
+  width: inherit;
+  height: 100px;
+  background-color: var(--menu-card-purple);
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.m-c-style img {
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.m-c-style div {
+  padding: 15px;
+}
+
+.meal-price {
+  margin-top: 14px;
+}

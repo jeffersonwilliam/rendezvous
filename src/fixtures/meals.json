@@ -1,0 +1,34 @@
+[
+  {
+    "id": "0001",
+    "cafe_name": "Cafe Noir",
+    "menu": {
+      "appetizers": [
+        {
+          "image": "1001",
+          "title": "Creamy Avocado Dip",
+          "description": "A slightly creamier version of guacamole, this no-cook avocado dip can be enjoyed with fresh veggies, tortilla chips, or a combination of both. ",
+          "price": "$26.00"
+        },
+        {
+          "image": "1001",
+          "title": "Cheese Puffs",
+          "description": "They are light and airy, and they melt in your mouth",
+          "price": "$15.00"
+        },
+        {
+          "image": "1001",
+          "title": "Crostini",
+          "description": "Crusty bread with different delicious toppings",
+          "price": "$35.00"
+        },
+        {
+          "image": "1001",
+          "title": "Charcuterie",
+          "description": "A delicatessen specializing in dressed meats and meat dishes",
+          "price": "$75.00"
+        }
+      ]
+    }
+  }
+]
