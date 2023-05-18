@@ -4,6 +4,7 @@ import ImageCarousel from '../filter-views/details/image-carousel/ImageCarousel'
 import FilterButtons from '../filter-buttons/FilterButtons';
 import VenueDetails from '../../utils/venuedetails/VenueDetails';
 import Menu from '../filter-views/menu/Menu';
+import Vibes from '../filter-views/vibes/Vibes';
 import { useSelector } from 'react-redux';
 import { current } from '@reduxjs/toolkit';
 
@@ -34,7 +35,11 @@ const MoreInfo = () => {
         </>
       );
     } else if (currentView === 'vibes') {
-      return <>Vibes</>;
+      return (
+        <>
+          <Vibes />
+        </>
+      );
     } else if (currentView === 'reviews') {
       return <>Reviews</>;
     } else {
