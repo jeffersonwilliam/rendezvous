@@ -5,25 +5,129 @@
     "menu": {
       "appetizers": [
         {
-          "image": "1001",
+          "image": "../../public/mealimages/r6.jpg",
           "title": "Creamy Avocado Dip",
           "description": "A slightly creamier version of guacamole, this no-cook avocado dip can be enjoyed with fresh veggies, tortilla chips, or a combination of both. ",
           "price": "$26.00"
         },
         {
-          "image": "1001",
+          "image": "../../public/mealimages/r3.jpg",
           "title": "Cheese Puffs",
           "description": "They are light and airy, and they melt in your mouth",
           "price": "$15.00"
         },
         {
-          "image": "1001",
+          "image": "../../public/mealimages/r2.jpg",
           "title": "Crostini",
           "description": "Crusty bread with different delicious toppings",
           "price": "$35.00"
         },
         {
-          "image": "1001",
+          "image": "../../public/mealimages/r4.jpg",
+          "title": "Charcuterie",
+          "description": "A delicatessen specializing in dressed meats and meat dishes",
+          "price": "$75.00"
+        }
+      ],
+      "pastries": [
+        {
+          "image": "../../public/mealimages/r6.jpg",
+          "title": "Creamy Avocado Dip",
+          "description": "A slightly creamier version of guacamole, this no-cook avocado dip can be enjoyed with fresh veggies, tortilla chips, or a combination of both. ",
+          "price": "$26.00"
+        },
+        {
+          "image": "../../public/mealimages/r3.jpg",
+          "title": "Cheese Puffs",
+          "description": "They are light and airy, and they melt in your mouth",
+          "price": "$15.00"
+        },
+        {
+          "image": "../../public/mealimages/r2.jpg",
+          "title": "Crostini",
+          "description": "Crusty bread with different delicious toppings",
+          "price": "$35.00"
+        },
+        {
+          "image": "../../public/mealimages/r4.jpg",
+          "title": "Charcuterie",
+          "description": "A delicatessen specializing in dressed meats and meat dishes",
+          "price": "$75.00"
+        }
+      ],
+      "specials": [
+        {
+          "image": "../../public/mealimages/r6.jpg",
+          "title": "Creamy Avocado Dip",
+          "description": "A slightly creamier version of guacamole, this no-cook avocado dip can be enjoyed with fresh veggies, tortilla chips, or a combination of both. ",
+          "price": "$26.00"
+        },
+        {
+          "image": "../../public/mealimages/r3.jpg",
+          "title": "Cheese Puffs",
+          "description": "They are light and airy, and they melt in your mouth",
+          "price": "$15.00"
+        },
+        {
+          "image": "../../public/mealimages/r2.jpg",
+          "title": "Crostini",
+          "description": "Crusty bread with different delicious toppings",
+          "price": "$35.00"
+        },
+        {
+          "image": "../../public/mealimages/r4.jpg",
+          "title": "Charcuterie",
+          "description": "A delicatessen specializing in dressed meats and meat dishes",
+          "price": "$75.00"
+        }
+      ],
+      "soups": [
+        {
+          "image": "../../public/mealimages/r6.jpg",
+          "title": "Creamy Avocado Dip",
+          "description": "A slightly creamier version of guacamole, this no-cook avocado dip can be enjoyed with fresh veggies, tortilla chips, or a combination of both. ",
+          "price": "$26.00"
+        },
+        {
+          "image": "../../public/mealimages/r3.jpg",
+          "title": "Cheese Puffs",
+          "description": "They are light and airy, and they melt in your mouth",
+          "price": "$15.00"
+        },
+        {
+          "image": "../../public/mealimages/r2.jpg",
+          "title": "Crostini",
+          "description": "Crusty bread with different delicious toppings",
+          "price": "$35.00"
+        },
+        {
+          "image": "../../public/mealimages/r4.jpg",
+          "title": "Charcuterie",
+          "description": "A delicatessen specializing in dressed meats and meat dishes",
+          "price": "$75.00"
+        }
+      ],
+      "salad": [
+        {
+          "image": "../../public/mealimages/r6.jpg",
+          "title": "Creamy Avocado Dip",
+          "description": "A slightly creamier version of guacamole, this no-cook avocado dip can be enjoyed with fresh veggies, tortilla chips, or a combination of both. ",
+          "price": "$26.00"
+        },
+        {
+          "image": "../../public/mealimages/r3.jpg",
+          "title": "Cheese Puffs",
+          "description": "They are light and airy, and they melt in your mouth",
+          "price": "$15.00"
+        },
+        {
+          "image": "../../public/mealimages/r2.jpg",
+          "title": "Crostini",
+          "description": "Crusty bread with different delicious toppings",
+          "price": "$35.00"
+        },
+        {
+          "image": "../../public/mealimages/r4.jpg",
           "title": "Charcuterie",
           "description": "A delicatessen specializing in dressed meats and meat dishes",
           "price": "$75.00"

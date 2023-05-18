@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import MenuCard from './MenuCard';
+import meals from '../../../fixtures/meals.json';
 import './menu.scss';
 
 const tabs = [
@@ -18,39 +19,31 @@ const Menu = () => {
     if (label === 'Pastries') {
       return (
         <>
-          <MenuCard />
+          <MenuCard mealtype={meals[0].menu.pastries} />
         </>
       );
     } else if (label === 'Specials') {
       return (
         <>
-          <div>Special 1</div>
-          <div>Special 2</div>
-          <div>Special 3</div>
+          <MenuCard mealtype={meals[0].menu.specials} />
         </>
       );
     } else if (label === 'Soups') {
       return (
         <>
-          <div>Soup 1</div>
-          <div>Soup 2</div>
-          <div>Soup 3</div>
+          <MenuCard mealtype={meals[0].menu.soups} />
         </>
       );
     } else if (label === 'Appetizers') {
       return (
         <>
-          <div>Appetizer 1</div>
-          <div>Appetizer 2</div>
-          <div>Appetizer 3</div>
+          <MenuCard mealtype={meals[0].menu.appetizers} />
         </>
       );
     } else if (label === 'Salad') {
       return (
         <>
-          <div>Salad 1</div>
-          <div>Salad 2</div>
-          <div>Salad 3</div>
+          <MenuCard mealtype={meals[0].menu.salad} />
         </>
       );
     }
