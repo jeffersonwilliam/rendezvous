@@ -83,7 +83,8 @@ li {
   left: 0;
   right: 0;
   height: 1px;
-  background: #8855ff;
+  background: var(--purple);
+  height: 3px;
 }
 
 li.selected {
