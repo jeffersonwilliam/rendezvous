@@ -6,7 +6,7 @@ const MenuCard = ({ mealtype }) => {
     <div>
       {mealtype.map((meal, index) => {
         return (
-          <div className='m-c-style'>
+          <div key={index} className='m-c-style'>
             <img src={meal?.image} alt='' />
             <div className='meal-details'>
               <h3>{meal?.title}</h3>
